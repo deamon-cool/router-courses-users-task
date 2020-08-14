@@ -1,0 +1,13 @@
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.active {
+    background-color: aqua;
+}
