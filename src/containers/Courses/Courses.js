@@ -21,7 +21,7 @@ class Courses extends Component {
     }
 
     render() {
-        return (
+        let courses =
             <div>
                 <h1>Amazing Udemy Courses</h1>
                 <section className="Courses">
@@ -35,6 +35,12 @@ class Courses extends Component {
                         })
                     }
                 </section>
+            </div>;
+
+
+        return (
+            <div>
+                <Route path='/courses' exact render={() => courses}/>
                 <Route path='/courses/:id' render={(props) => <Course {...props} title={this.state.choosenTitle} />} />
                 {/* <Route path='/courses/:id' component={Course} /> */}
 
