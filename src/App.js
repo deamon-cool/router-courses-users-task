@@ -22,10 +22,6 @@ class App extends Component {
             <Route path='/not-found' exact render={() => <h1>404 Not Found</h1>} />
             <Redirect to='/not-found' />
           </Switch>
-
-          <ol style={{ textAlign: 'left' }}>
-            <li>Redirect requests to /all-courses to /courses (=> Your "Courses" page)</li>
-          </ol>
         </div>
       </BrowserRouter>
     );
